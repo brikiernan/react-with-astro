@@ -1,0 +1,27 @@
+.Drawer-container {
+  width: 482px;
+  position: fixed;
+  top: 142px;
+  z-index: 1200;
+}
+
+#Drawer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  opacity: 1;
+}
+
+#Drawer-open {
+  right: 0;
+  transition: all 0.3s ease-out;
+}
+
+#Drawer-closed {
+  right: -500px;
+  transition: all 0.3s ease-out;
+}

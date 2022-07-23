@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { RuxClassificationMarking, RuxContainer } from '@astrouxds/react';
-import { Contact } from 'types';
 import data from 'data/contacts.json';
+import { Contact } from 'types';
 import StatusBar from './status-bar';
 import Header from './header';
 import LeftTabBar from './left-tab-bar';
