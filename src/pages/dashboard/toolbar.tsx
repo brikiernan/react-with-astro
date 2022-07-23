@@ -7,7 +7,7 @@ type ToolbarProps = {
 };
 
 const Toolbar: React.FC<ToolbarProps> = ({ contacts }) => (
-  <div className='Toolbar-grid'>
+  <div className='Toolbar-grid' slot='toolbar'>
     <div className='Toolbar-box'>
       <h1>{contacts.length}</h1>
       <p>Active Items</p>

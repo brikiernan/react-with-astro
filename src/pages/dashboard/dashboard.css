@@ -1,15 +1,7 @@
 .Dashboard-container {
-  background-color: var(--color-palette-darkblue-800);
-  min-height: calc(100vh - 52px);
-}
-
-.Dashboard-grid {
+  min-height: calc(100vh - 152px);
   display: grid;
   grid-template-columns: 475px 1fr;
   padding: 1.25rem;
-  gap: 0.75rem;
-}
-
-.Dashboard-left {
-  border: 1px solid black;
+  gap: 1.25rem;
 }

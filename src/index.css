@@ -6,13 +6,17 @@
   margin: 0;
 }
 
+rux-container::part(body) {
+  padding: 0;
+}
+
 h1 {
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-regular);
   font-size: var(--font-size-4xl);
 }
 
 h2 {
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-regular);
   font-size: var(--font-size-2xl);
 }
 
@@ -27,7 +31,7 @@ h6 {
 }
 
 p {
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-regular);
   font-size: var(--font-size-base);
 }
 

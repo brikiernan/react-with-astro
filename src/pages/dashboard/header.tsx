@@ -2,7 +2,7 @@ import { RuxButton, RuxIcon, RuxInput } from '@astrouxds/react';
 import './header.css';
 
 const Header: React.FC = () => (
-  <div className='Header-box'>
+  <div className='Header-box' slot='header'>
     <h2>Contacts</h2>
     <div className='Header-input'>
       <RuxInput placeholder='Search...' size='small'>
