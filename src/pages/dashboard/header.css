@@ -8,3 +8,7 @@
   gap: 0.5rem;
   align-items: center;
 }
+
+#Header-input-btn rux-button::part(container) {
+  width: inherit;
+}

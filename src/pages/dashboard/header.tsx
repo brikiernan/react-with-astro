@@ -4,7 +4,7 @@ import './header.css';
 const Header: React.FC = () => (
   <div className='Header-box' slot='header'>
     <h2>Contacts</h2>
-    <div className='Header-input'>
+    <div id='Header-input-btn' className='Header-input'>
       <RuxInput placeholder='Search...' size='small'>
         <RuxIcon slot='prefix' icon='search' size='extra-small' />
       </RuxInput>

@@ -8,5 +8,11 @@ export const Home: React.FC = () => (
     <Link to={Path.dashboard}>
       <RuxButton>Go To Dashboard</RuxButton>
     </Link>
+
+    {/* @ts-ignore */}
+    <rux-button onClick={() => console.log('Clicked...')} class='pl-3'>
+      Button Without Wrapper
+      {/* @ts-ignore */}
+    </rux-button>
   </div>
 );

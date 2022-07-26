@@ -8,8 +8,9 @@ const ButtonBar: React.FC = () => (
       <RuxButton className='pr-3' secondary>
         First button
       </RuxButton>
-      <RuxButton secondary>Button two</RuxButton>
-      <div className='flex-grow-1' />
+      <RuxButton className='flex-grow-1' secondary>
+        Button two
+      </RuxButton>
       <RuxButton className='pr-3' secondary>
         Third longish button
       </RuxButton>

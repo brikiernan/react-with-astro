@@ -26,7 +26,7 @@ export const Dashboard: React.FC = () => {
     <RuxClassificationMarking>
       <StatusBar />
       <div className='Dashboard-container'>
-        <RuxContainer>
+        <RuxContainer className='disable-body-padding'>
           <Header />
           <LeftTabBar />
           <Toolbar contacts={contacts} />
