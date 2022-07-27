@@ -36,7 +36,7 @@ export const Drawer: React.FC<DrawerProps> = ({ text }) => {
           id={isOpen ? 'Drawer-open' : 'Drawer-closed'}
           className='Drawer-container'
         >
-          <h2 slot='header'>Drawer</h2>
+          <h2 slot='header'>Slide-out panel</h2>
           <RuxTabs small slot='tab-bar'>
             <RuxTab selected>Tab item 1</RuxTab>
             <RuxTab>Tab item 2</RuxTab>
