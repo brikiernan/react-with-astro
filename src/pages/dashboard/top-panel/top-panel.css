@@ -1,0 +1,4 @@
+.Dashboard-top-panel {
+  background-color: rgba(100, 148, 237, 0.32);
+  grid-area: top-panel;
+}

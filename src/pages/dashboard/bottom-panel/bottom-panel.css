@@ -1,0 +1,4 @@
+.Dashboard-bottom-panel {
+  background-color: rgba(184, 135, 11, 0.325);
+  grid-area: bottom-panel;
+}

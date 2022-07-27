@@ -1,0 +1,4 @@
+.Dashboard-tab-bar {
+  background-color: rgba(165, 42, 42, 0.5);
+  grid-area: tab-bar;
+}

@@ -1,6 +1,6 @@
 import { RuxTab, RuxTabs } from '@astrouxds/react';
 
-const LeftTabBar: React.FC = () => (
+export const TabBar: React.FC = () => (
   <div slot='tab-bar'>
     <RuxTabs small onRuxselected={e => console.log('Rux selected...', e)}>
       <RuxTab selected>Tab item 1</RuxTab>
@@ -9,5 +9,3 @@ const LeftTabBar: React.FC = () => (
     </RuxTabs>
   </div>
 );
-
-export default LeftTabBar;

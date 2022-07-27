@@ -1,9 +1,9 @@
 import { RuxButton, RuxIcon, RuxInput } from '@astrouxds/react';
 import './header.css';
 
-const Header: React.FC = () => (
+export const Header: React.FC = () => (
   <div className='Header-box' slot='header'>
-    <h2>Contacts</h2>
+    <h2>Left panel</h2>
     <div id='Header-input-btn' className='Header-input'>
       <RuxInput placeholder='Search...' size='small'>
         <RuxIcon slot='prefix' icon='search' size='extra-small' />
@@ -12,5 +12,3 @@ const Header: React.FC = () => (
     </div>
   </div>
 );
-
-export default Header;

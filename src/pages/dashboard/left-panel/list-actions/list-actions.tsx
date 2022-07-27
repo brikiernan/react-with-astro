@@ -1,6 +1,6 @@
 import { RuxButton, RuxButtonGroup } from '@astrouxds/react';
 
-const ListActions: React.FC = () => (
+export const ListActions: React.FC = () => (
   <div slot='footer'>
     <RuxButtonGroup hAlign='right'>
       <RuxButton className='pr-3' secondary>
@@ -10,5 +10,3 @@ const ListActions: React.FC = () => (
     </RuxButtonGroup>
   </div>
 );
-
-export default ListActions;

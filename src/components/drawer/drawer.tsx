@@ -12,7 +12,7 @@ import {
   RuxTabs,
   RuxTextarea,
 } from '@astrouxds/react';
-import { ClickAwayListener } from './click-away-listener';
+import { ClickAwayListener } from 'components/click-away-listener';
 import './drawer.css';
 
 type DrawerProps = {
@@ -29,10 +29,9 @@ export const Drawer: React.FC<DrawerProps> = ({ text }) => {
     <>
       <div id={isOpen ? 'Drawer-overlay' : ''} />
       <ClickAwayListener onClickAway={handleClose}>
-        <RuxButton secondary onClick={handleOpen}>
+        <RuxButton size='small' secondary onClick={handleOpen}>
           {text}
         </RuxButton>
-
         <RuxContainer
           id={isOpen ? 'Drawer-open' : 'Drawer-closed'}
           className='Drawer-container'
@@ -92,7 +91,7 @@ export const Drawer: React.FC<DrawerProps> = ({ text }) => {
             <RuxButton className='flex-grow-1' borderless>
               Restore to defaults
             </RuxButton>
-            <RuxButton className='pr-3' secondary>
+            <RuxButton className='pr-3' secondary onClick={handleClose}>
               Cancel
             </RuxButton>
             <RuxButton>Apply</RuxButton>

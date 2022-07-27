@@ -5,14 +5,14 @@ import {
 } from '@astrouxds/react';
 import './status-bar.css';
 
-const StatusBar: React.FC = () => (
+export const StatusBar: React.FC = () => (
   <RuxGlobalStatusBar
-    appState='Production'
+    appState='App state'
     appStateColor='tag1'
-    username='Joan Smith'
+    username='User Name'
     appDomain='Astro'
-    appName='Dashboard'
-    appVersion='4.0 Alpha'
+    appName='Sample App'
+    appVersion='0.0 Alpha'
     menuIcon='apps'
     includeIcon
   >
@@ -29,5 +29,3 @@ const StatusBar: React.FC = () => (
     </div>
   </RuxGlobalStatusBar>
 );
-
-export default StatusBar;

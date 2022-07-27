@@ -1,0 +1,4 @@
+.Dashboard-button-bar {
+  background-color: rgba(255, 228, 196, 0.5);
+  grid-area: button-bar;
+}

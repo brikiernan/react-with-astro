@@ -1,14 +1,11 @@
 import { useState } from 'react';
 import { RuxStatus } from '@astrouxds/react';
-import { Contact } from 'types';
+import { useData } from 'providers/data';
 import './list.css';
 
-type ListProps = {
-  contacts: Contact[];
-};
-
-const List: React.FC<ListProps> = ({ contacts }) => {
+export const List: React.FC = () => {
   const [selected, setSelected] = useState(-1);
+  const { contacts } = useData();
 
   return (
     <div className='List-box'>
@@ -31,5 +28,3 @@ const List: React.FC<ListProps> = ({ contacts }) => {
     </div>
   );
 };
-
-export default List;

@@ -1,43 +1,23 @@
-import { useEffect, useState } from 'react';
-import { RuxClassificationMarking, RuxContainer } from '@astrouxds/react';
-import data from 'data/contacts.json';
-import { Contact } from 'types';
-import StatusBar from './status-bar';
-import Header from './header';
-import LeftTabBar from './left-tab-bar';
-import Toolbar from './toolbar';
-import List from './list';
-import ListActions from './list-actions';
+import { RuxClassificationMarking } from '@astrouxds/react';
+import StatusBar from 'components/status-bar';
+import LeftPanel from './left-panel';
 import TabBar from './tab-bar';
 import ButtonBar from './button-bar';
+import RightPanel from './right-panel';
+import BottomPanel from './bottom-panel';
+import TopPanel from './top-panel';
 import './dashboard.css';
 
-const sort = (a: Contact, b: Contact) => b.alerts.length - a.alerts.length;
-
-export const Dashboard: React.FC = () => {
-  const [contacts, setContacts] = useState<Contact[]>([]);
-
-  useEffect(() => {
-    const mochContacts = data as Contact[];
-    setContacts(mochContacts.sort(sort).slice(0, 27));
-  }, []);
-
-  return (
-    <RuxClassificationMarking>
-      <StatusBar />
-      <div className='Dashboard-container'>
-        <RuxContainer className='disable-body-padding'>
-          <Header />
-          <LeftTabBar />
-          <Toolbar contacts={contacts} />
-          <List contacts={contacts} />
-          <ListActions />
-        </RuxContainer>
-        <div className='Dashboard-content'>
-          <TabBar />
-          <ButtonBar />
-        </div>
-      </div>
-    </RuxClassificationMarking>
-  );
-};
+export const Dashboard: React.FC = () => (
+  <RuxClassificationMarking>
+    <StatusBar />
+    <main className='Dashboard-grid'>
+      <LeftPanel />
+      <TabBar />
+      <ButtonBar />
+      <TopPanel />
+      <BottomPanel />
+      <RightPanel />
+    </main>
+  </RuxClassificationMarking>
+);
