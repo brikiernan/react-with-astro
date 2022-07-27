@@ -1,4 +1,6 @@
 .Dashboard-right-panel {
   background-color: rgba(0, 206, 209, 0.314);
   grid-area: right-panel;
+  overflow: auto;
+  display: flex;
 }
