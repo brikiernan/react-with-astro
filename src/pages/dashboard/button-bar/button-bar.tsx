@@ -1,5 +1,4 @@
 import { RuxButton, RuxButtonGroup } from '@astrouxds/react';
-import Drawer from 'components/drawer';
 import './button-bar.css';
 
 export const ButtonBar: React.FC = () => (
@@ -17,7 +16,9 @@ export const ButtonBar: React.FC = () => (
       <RuxButton size='small' className='pr-3' secondary>
         Button 4
       </RuxButton>
-      <Drawer text='Open right slide out panel' />
+      <RuxButton size='small' className='pr-3' secondary>
+        Fifth longish button name
+      </RuxButton>
     </RuxButtonGroup>
   </div>
 );

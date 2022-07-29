@@ -1,4 +1,4 @@
-.Drawer-container {
+.RightSlideOut-container {
   width: 482px;
   position: fixed;
   top: 142px;
@@ -6,7 +6,7 @@
   --body-padding: var(--spacing-6) var(--spacing-8);
 }
 
-#Drawer-overlay {
+#RightSlideOut-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -17,20 +17,24 @@
   opacity: 1;
 }
 
-#Drawer-open {
+#RightSlideOut-open {
   right: 0;
   transition: all 0.3s ease-out;
 }
 
-#Drawer-closed {
+#RightSlideOut-closed {
   right: -500px;
   transition: all 0.3s ease-out;
 }
 
-.Drawer-grid {
+.RightSlideOut-grid {
   display: grid;
   grid-template-columns: 1fr 250px;
   gap: var(--spacing-4) var(--spacing-2);
+}
+
+#RightSlideOut-slider::part(axis-label) {
+  font-size: var(--font-size-xs);
 }
 
 #form-item rux-input {
@@ -39,8 +43,4 @@
 
 #form-item > rux-button::part(container) {
   width: inherit;
-}
-
-#Drawer-slider::part(axis-label) {
-  font-size: var(--font-size-xs);
 }

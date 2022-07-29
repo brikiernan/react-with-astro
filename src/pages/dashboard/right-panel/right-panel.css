@@ -1,5 +1,8 @@
 .Dashboard-right-panel {
   grid-area: right-panel;
   overflow: auto;
-  display: flex;
+}
+
+#RightPanel-table-row:hover {
+  cursor: pointer;
 }

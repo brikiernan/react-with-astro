@@ -1,9 +1,9 @@
 import { RuxContainer } from '@astrouxds/react';
 import Header from './header';
-import List from './list';
-import ListActions from './list-actions';
 import TabBar from './tab-bar';
 import Toolbar from './toolbar';
+import List from './list';
+import Footer from './footer';
 import './left-panel.css';
 
 export const LeftPanel: React.FC = () => (
@@ -12,6 +12,6 @@ export const LeftPanel: React.FC = () => (
     <TabBar />
     <Toolbar />
     <List />
-    <ListActions />
+    <Footer />
   </RuxContainer>
 );

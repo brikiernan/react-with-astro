@@ -21,7 +21,7 @@
 }
 
 .List-item:hover {
-  background-color: var(--color-background-base-hover);
+  background-color: var(--color-background-surface-hover);
   cursor: pointer;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .List-item-selected {
-  background-color: var(--color-background-base-selected);
+  background-color: var(--color-background-surface-selected);
   border-left: 4px solid var(--color-border-interactive-default);
   display: flex;
   gap: 0.75rem;
