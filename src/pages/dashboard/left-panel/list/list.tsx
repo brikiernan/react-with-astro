@@ -8,23 +8,21 @@ export const List: React.FC = () => {
   const { contacts } = useData();
 
   return (
-    <div className='List-box'>
-      <ul>
-        {contacts.map(({ _id, ...c }, i) => (
-          <li
-            key={_id}
-            className={selected === i ? 'List-item-selected' : 'List-item'}
-            onClick={() => setSelected(i)}
-          >
-            <RuxStatus status={c.contactStatus} />
-            <div>
-              <h3>{c.contactSatellite}</h3>
-              <h6>{c.contactStep}</h6>
-            </div>
-            <h1>{c.contactElevation}</h1>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul className='List-ul-container'>
+      {contacts.map(({ _id, ...c }, i) => (
+        <li
+          key={_id}
+          className={selected === i ? 'selected' : undefined}
+          onClick={() => setSelected(i)}
+        >
+          <RuxStatus status={c.contactStatus} />
+          <div className='flex-grow-1'>
+            <h3>{c.contactSatellite}</h3>
+            <h6>{c.contactStep}</h6>
+          </div>
+          <h1>{c.contactElevation}</h1>
+        </li>
+      ))}
+    </ul>
   );
 };

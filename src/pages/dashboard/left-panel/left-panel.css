@@ -1,3 +1,5 @@
 .Dashboard-left-panel {
+  background-color: rgba(165, 42, 42, 0.5);
   grid-area: left-panel;
+  --body-padding: 0;
 }

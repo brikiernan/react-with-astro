@@ -7,7 +7,7 @@ import Footer from './footer';
 import './left-panel.css';
 
 export const LeftPanel: React.FC = () => (
-  <RuxContainer className='Dashboard-left-panel disable-body-padding'>
+  <RuxContainer className='Dashboard-left-panel'>
     <Header />
     <TabBar />
     <Toolbar />

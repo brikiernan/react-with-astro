@@ -20,14 +20,16 @@ export const BottomPanel: React.FC = () => {
       <h2 slot='header'>Center bottom panel</h2>
       <RuxTable>
         <RuxTableHeader>
-          <RuxTableCell id='BottomPanel-header-checkbox'>
-            <RuxCheckbox />
-          </RuxTableCell>
-          <RuxTableCell>Ground</RuxTableCell>
-          <RuxTableCell>Equipment</RuxTableCell>
-          <RuxTableCell>Status</RuxTableCell>
-          <RuxTableCell>Number</RuxTableCell>
-          <RuxTableCell>Icon</RuxTableCell>
+          <RuxTableRow>
+            <RuxTableCell id='BottomPanel-header-checkbox'>
+              <RuxCheckbox />
+            </RuxTableCell>
+            <RuxTableCell>Ground</RuxTableCell>
+            <RuxTableCell>Equipment</RuxTableCell>
+            <RuxTableCell>Status</RuxTableCell>
+            <RuxTableCell>Number</RuxTableCell>
+            <RuxTableCell>Icon</RuxTableCell>
+          </RuxTableRow>
         </RuxTableHeader>
         <RuxTableBody>
           {contacts.slice(10, 30).map(({ _id, ...c }) => (

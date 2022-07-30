@@ -2,7 +2,3 @@
   grid-area: bottom-panel;
   overflow: auto;
 }
-
-#BottomPanel-header-checkbox {
-  padding-left: 30px;
-}
