@@ -2,3 +2,19 @@
   background-color: rgba(100, 148, 237, 0.32);
   grid-area: top-panel;
 }
+
+.TopPanel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TopPanel-header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.TopPanel-header-right > p {
+  min-width: fit-content;
+}
