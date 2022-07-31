@@ -5,7 +5,7 @@ type ClickAwayListenerProps = Children & {
   onClickAway: () => void;
 };
 
-export const ClickAwayListener: React.FC<ClickAwayListenerProps> = ({
+const ClickAwayListener: React.FC<ClickAwayListenerProps> = ({
   children,
   onClickAway,
 }) => {
@@ -30,3 +30,5 @@ export const ClickAwayListener: React.FC<ClickAwayListenerProps> = ({
 
   return <div ref={ref}>{children}</div>;
 };
+
+export default ClickAwayListener;

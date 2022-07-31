@@ -15,7 +15,7 @@ export const TopPanel: React.FC = () => {
           />
         </div>
       </div>
-      <div style={{ height: 192, background: '#333' }}>Charts go here</div>
+      <div className='TopPanel-charts-container'>Charts go here</div>
     </RuxContainer>
   );
 };

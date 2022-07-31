@@ -12,7 +12,7 @@ export const Toolbar: React.FC = () => {
         <p>Active Items</p>
       </div>
       <div>
-        <p className='p-gutter-bottom'>Sort by</p>
+        <p className='gutter-bottom'>Sort by</p>
         <RuxSelect placeholder='Last updated' size='small'>
           <RuxOption value='last-updated' label='Last updated' />
           <RuxOption value='1.1' label='Option 1.1' />
@@ -21,7 +21,7 @@ export const Toolbar: React.FC = () => {
         </RuxSelect>
       </div>
       <div>
-        <p className='p-gutter-bottom'>Item type</p>
+        <p className='gutter-bottom'>Item type</p>
         <RuxSelect placeholder='All' size='small'>
           <RuxOption value='all' label='All' />
           <RuxOption value='1.1' label='Option 1.1' />
