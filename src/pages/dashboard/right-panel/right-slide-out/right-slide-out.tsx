@@ -107,7 +107,7 @@ export const RightSlideOut: React.FC<DrawerProps> = ({
         </RuxContainer>
       </ClickAwayListener>
       <div id={isOpen ? 'RightSlideOut-overlay' : ''} />
-      <SaveModal {...{ isModalOpen, setValue, value }} />
+      <SaveModal {...{ isModalOpen, setIsModalOpen, setValue, value }} />
     </>
   );
 };

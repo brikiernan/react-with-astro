@@ -8,12 +8,14 @@ import {
 
 type SaveModalProps = {
   isModalOpen: boolean;
+  setIsModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
   setValue: React.Dispatch<React.SetStateAction<number>>;
   value: number;
 };
 
 export const SaveModal: React.FC<SaveModalProps> = props => {
-  const { isModalOpen, setValue, value } = props;
+  const { isModalOpen, setIsModalOpen, setValue, value } = props;
+  const closeModal = () => setIsModalOpen(false);
 
   useEffect(() => {
     if (isModalOpen && value < 100) {
@@ -24,15 +26,18 @@ export const SaveModal: React.FC<SaveModalProps> = props => {
   }, [isModalOpen, value, setValue]);
 
   return (
-    <RuxDialog modalTitle='Save changes' open={isModalOpen}>
+    <RuxDialog
+      modalTitle='Save changes'
+      open={isModalOpen}
+      onRuxdialogclosed={closeModal}
+    >
       <h3 className='gutter-bottom'>Compiling changes</h3>
       <RuxProgress max={100} value={value} />
       <div slot='footer'>
         <RuxButtonGroup hAlign='right'>
-          <RuxButton className='pr-3' secondary>
+          <RuxButton onClick={closeModal} className='pr-3' secondary>
             Cancel
           </RuxButton>
-          <RuxButton disabled>Save</RuxButton>
         </RuxButtonGroup>
       </div>
     </RuxDialog>
