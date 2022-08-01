@@ -1,5 +1,6 @@
 .Dashboard-top-panel {
   grid-area: top-panel;
+  --body-padding: var(--spacing-4) var(--spacing-3);
 }
 
 .TopPanel-header {
@@ -11,7 +12,7 @@
 .TopPanel-header-right {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: var(--spacing-3);
 }
 
 .TopPanel-header-right > p {
@@ -19,5 +20,18 @@
 }
 
 .TopPanel-charts-container {
-  height: 12rem;
+  height: 13.25rem;
+  display: grid;
+  grid-template-columns: 312px 312px 1fr;
+  gap: 0.625rem;
+  align-items: center;
+  padding: var(--spacing-0) 1.25rem;
+}
+
+.TopPanel-chart-item {
+  width: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
 }

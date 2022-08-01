@@ -1,0 +1,33 @@
+.Legend-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.Legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.Legend-box {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: var(--spacing-050);
+}
+
+#Legend-charlie {
+  background-color: var(--color-palette-purple-300);
+}
+
+#Legend-delta {
+  background-color: var(--color-palette-purple-400);
+}
+
+#Legend-foxtrot {
+  background-color: var(--color-palette-purple-600);
+}
+
+#Legend-hotel {
+  background-color: var(--color-palette-purple-800);
+}
