@@ -5,7 +5,7 @@
 
 .Header-input {
   display: flex;
-  gap: 0.5rem;
+  gap: var(--spacing-2);
   align-items: center;
 }
 

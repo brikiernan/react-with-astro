@@ -1,4 +1,4 @@
 .StatusBar-icons {
   display: flex;
-  padding-top: 1rem;
+  padding-top: var(--spacing-4);
 }

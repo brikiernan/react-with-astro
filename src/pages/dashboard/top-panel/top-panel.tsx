@@ -2,6 +2,7 @@ import { RuxContainer, RuxSegmentedButton, RuxSwitch } from '@astrouxds/react';
 import Legend from 'components/legend';
 import DoughnutChart from './doughnut-chart';
 import PieChart from './pie-chart';
+import GraphChart from './graph-chart';
 import './top-panel.css';
 
 export const TopPanel: React.FC = () => (
@@ -26,7 +27,9 @@ export const TopPanel: React.FC = () => (
         <PieChart />
         <Legend />
       </div>
-      <div></div>
+      <div>
+        <GraphChart />
+      </div>
     </div>
   </RuxContainer>
 );

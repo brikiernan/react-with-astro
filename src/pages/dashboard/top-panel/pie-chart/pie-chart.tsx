@@ -1,5 +1,8 @@
+import { Chart as ChartJS, ArcElement } from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 import { Pie } from 'react-chartjs-2';
+
+ChartJS.register(ArcElement);
 
 export const PieChart: React.FC = () => (
   <Pie
@@ -21,6 +24,7 @@ export const PieChart: React.FC = () => (
       },
     }}
     data={{
+      labels: ['Red', 'Blue', 'Yellow', 'Green'],
       datasets: [
         {
           data: [25, 25, 25, 25],

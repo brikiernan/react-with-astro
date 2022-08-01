@@ -1,6 +1,6 @@
 import { Chart as ChartJS, ArcElement } from 'chart.js';
-import ChartDataLabels from 'chartjs-plugin-datalabels';
 import { Doughnut } from 'react-chartjs-2';
+import ChartDataLabels from 'chartjs-plugin-datalabels';
 import './doughnut-chart.css';
 
 ChartJS.register(ArcElement);
