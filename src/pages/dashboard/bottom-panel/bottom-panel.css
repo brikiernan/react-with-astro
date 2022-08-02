@@ -1,4 +1,5 @@
 .Dashboard-bottom-panel {
   grid-area: bottom-panel;
   overflow: auto;
+  --body-padding: var(--spacing-0);
 }

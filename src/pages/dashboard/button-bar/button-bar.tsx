@@ -16,7 +16,7 @@ export const ButtonBar: React.FC = () => (
       <RuxButton size='small' className='pr-3' secondary>
         Button 4
       </RuxButton>
-      <RuxButton size='small' className='pr-3' secondary>
+      <RuxButton size='small' secondary>
         Fifth longish button name
       </RuxButton>
     </RuxButtonGroup>

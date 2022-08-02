@@ -1,6 +1,7 @@
 .Dashboard-right-panel {
   grid-area: right-panel;
   overflow: auto;
+  --body-padding: var(--spacing-0);
 }
 
 #RightPanel-table-row:hover {

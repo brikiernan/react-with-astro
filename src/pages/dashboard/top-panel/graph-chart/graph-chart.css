@@ -1,5 +1,5 @@
 .GraphChart-label {
   text-align: center;
-  border-top: 2px solid black;
+  border-top: var(--spacing-050) solid black;
   padding-top: var(--spacing-3);
 }

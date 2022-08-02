@@ -1,7 +1,7 @@
 .RightSlideOut-container {
-  width: 482px;
+  width: 30.125rem;
   position: fixed;
-  top: 142px;
+  top: 8.875rem;
   z-index: 1200;
   --body-padding: var(--spacing-6) var(--spacing-8);
 }
@@ -15,22 +15,22 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1100;
   opacity: 1;
-  transition: all 0.3s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 #RightSlideOut-open {
   right: 0;
-  transition: all 0.3s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 #RightSlideOut-closed {
-  right: -500px;
-  transition: all 0.3s ease-out;
+  right: -32rem;
+  transition: all 0.5s ease-out;
 }
 
 .RightSlideOut-grid {
   display: grid;
-  grid-template-columns: 1fr 250px;
+  grid-template-columns: 1fr 15.625rem;
   gap: var(--spacing-4) var(--spacing-2);
 }
 
@@ -39,7 +39,7 @@
 }
 
 #form-item rux-input {
-  width: 134px;
+  width: 8.375rem;
 }
 
 #form-item > rux-button::part(container) {

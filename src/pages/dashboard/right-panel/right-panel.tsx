@@ -20,7 +20,7 @@ export const RightPanel: React.FC = () => {
 
   return (
     <>
-      <RuxContainer className='Dashboard-right-panel disable-body-padding '>
+      <RuxContainer className='Dashboard-right-panel'>
         <h2 slot='header'>Right panel</h2>
         <RuxTable>
           <RuxTableHeader>

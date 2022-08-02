@@ -85,7 +85,3 @@ li + .selected {
 .gap-3 {
   gap: var(--spacing-3);
 }
-
-.disable-body-padding {
-  --body-padding: var(--spacing-0);
-}

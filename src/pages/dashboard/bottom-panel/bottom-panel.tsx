@@ -16,7 +16,7 @@ export const BottomPanel: React.FC = () => {
   const { contacts } = useData();
 
   return (
-    <RuxContainer className='Dashboard-bottom-panel disable-body-padding'>
+    <RuxContainer className='Dashboard-bottom-panel'>
       <h2 slot='header'>Center bottom panel</h2>
       <RuxTable>
         <RuxTableHeader>
