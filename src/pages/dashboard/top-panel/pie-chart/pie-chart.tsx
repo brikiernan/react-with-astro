@@ -6,6 +6,7 @@ ChartJS.register(ArcElement);
 
 export const PieChart: React.FC = () => (
   <Pie
+    // seems to be a bug with this lib on the pie chart
     plugins={[ChartDataLabels]}
     options={{
       plugins: {
