@@ -23,7 +23,7 @@ export const Home: React.FC = () => {
         </Stack>
 
         <Stack direction='column' spacing={4} style={{ width: 250 }}>
-          <h3>Rux List</h3>
+          <h3>Astro 7.0 List Example</h3>
           <RuxList>
             {Array(5)
               .fill('Rux List item')
