@@ -1,0 +1,15 @@
+.rux-list-item {
+  background-color: var(--color-background-surface-default);
+  border-top: 1px solid var(--color-background-base-default);
+  padding: var(--spacing-3) var(--spacing-6);
+}
+
+.rux-list-item:hover {
+  background-color: var(--color-background-surface-hover);
+  cursor: pointer;
+}
+
+.rux-list-item + .selected {
+  background-color: var(--color-background-surface-selected);
+  border-left: 4px solid var(--color-border-interactive-default);
+}

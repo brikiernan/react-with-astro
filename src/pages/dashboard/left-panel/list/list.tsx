@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { RuxStatus } from '@astrouxds/react';
+
 import { useData } from 'providers/data';
+import RuxList from 'common/rux-list';
+import RuxListItem from 'common/rux-list-item';
 import './list.css';
 
 export const List: React.FC = () => {
@@ -8,12 +11,13 @@ export const List: React.FC = () => {
   const { contacts } = useData();
 
   return (
-    <ul className='List-ul-container'>
+    <RuxList className='List-wrapper'>
       {contacts.map(({ _id, ...c }, i) => (
-        <li
+        <RuxListItem
           key={_id}
-          className={selected === i ? 'selected' : undefined}
+          selected={selected === i}
           onClick={() => setSelected(i)}
+          className='List-item-wrapper'
         >
           <RuxStatus status={c.contactStatus} />
           <div className='flex-grow-1'>
@@ -21,8 +25,8 @@ export const List: React.FC = () => {
             <h6>{c.contactStep}</h6>
           </div>
           <h1>{c.contactElevation}</h1>
-        </li>
+        </RuxListItem>
       ))}
-    </ul>
+    </RuxList>
   );
 };

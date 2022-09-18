@@ -1,0 +1,4 @@
+.rux-list {
+  list-style-type: none;
+  padding: var(--spacing-0);
+}

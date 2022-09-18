@@ -28,7 +28,7 @@ const ClickAwayListener: React.FC<ClickAwayListenerProps> = ({
     };
   });
 
-  return <div ref={ref}>{children}</div>;
+  return <span ref={ref}>{children}</span>;
 };
 
 export default ClickAwayListener;

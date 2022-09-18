@@ -10,10 +10,13 @@ import {
   RuxTableRow,
 } from '@astrouxds/react';
 import { useData } from 'providers/data';
+import { useState } from 'react';
 import './bottom-panel.css';
 
 export const BottomPanel: React.FC = () => {
   const { contacts } = useData();
+  const [checked, setChecked] = useState(false);
+  const handleChange = () => setChecked(prev => !prev);
 
   return (
     <RuxContainer className='Dashboard-bottom-panel'>
@@ -22,7 +25,7 @@ export const BottomPanel: React.FC = () => {
         <RuxTableHeader>
           <RuxTableRow>
             <RuxTableCell id='BottomPanel-header-checkbox'>
-              <RuxCheckbox />
+              <RuxCheckbox checked={checked} onRuxchange={handleChange} />
             </RuxTableCell>
             <RuxTableCell>Ground</RuxTableCell>
             <RuxTableCell>Equipment</RuxTableCell>
@@ -35,7 +38,7 @@ export const BottomPanel: React.FC = () => {
           {contacts.slice(10, 30).map(({ _id, ...c }) => (
             <RuxTableRow key={_id}>
               <RuxTableCell>
-                <RuxCheckbox />
+                <RuxCheckbox checked={checked} />
               </RuxTableCell>
               <RuxTableCell>
                 <p>{c.contactGround}</p>

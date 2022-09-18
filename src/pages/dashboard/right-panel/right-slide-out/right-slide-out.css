@@ -15,17 +15,17 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1100;
   opacity: 1;
-  transition: all 0.5s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 #RightSlideOut-open {
   right: 0;
-  transition: all 0.5s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 #RightSlideOut-closed {
   right: -32rem;
-  transition: all 0.5s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .RightSlideOut-grid {
