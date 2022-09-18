@@ -26,7 +26,7 @@ const ClickAwayListener: React.FC<ClickAwayListenerProps> = ({
     return () => {
       document.removeEventListener('mousedown', handleClickAway);
     };
-  });
+  }, [onClickAway]);
 
   return <span ref={ref}>{children}</span>;
 };

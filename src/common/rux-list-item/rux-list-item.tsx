@@ -17,6 +17,10 @@ export const RuxListItem: React.FC<RuxListItemProps> = ({
     className = props.className + ' rux-list-item';
   }
 
+  if (selected) {
+    className = 'rux-list-item selected';
+  }
+
   if (props.className && selected) {
     className = props.className + ' rux-list-item selected';
   }
