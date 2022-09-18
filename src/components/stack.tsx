@@ -9,7 +9,7 @@ type StackProps = Children &
 
 export const Stack: React.FC<StackProps> = ({
   children,
-  direction = 'row',
+  direction = 'column',
   spacing = 2,
   wrap,
   ...props

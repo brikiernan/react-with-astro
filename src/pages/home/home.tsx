@@ -14,15 +14,15 @@ export const Home: React.FC = () => {
 
   return (
     <div className='Home-container'>
-      <Stack direction='column' spacing={8}>
-        <Stack direction='column' spacing={4}>
+      <Stack spacing={8}>
+        <Stack spacing={4}>
           <h3>Astro 7.0 Sample App</h3>
           <Link to={Path.dashboard}>
             <RuxButton>Go To Sample App</RuxButton>
           </Link>
         </Stack>
 
-        <Stack direction='column' spacing={4} style={{ width: 250 }}>
+        <Stack spacing={4} style={{ width: 250 }}>
           <h3>Astro 7.0 List Example</h3>
           <RuxList>
             {Array(5)
