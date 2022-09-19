@@ -12,7 +12,7 @@ export const StatusBar: React.FC = () => (
     username='User Name'
     appDomain='Astro'
     appName='Sample App'
-    appVersion='0.0 Alpha'
+    appVersion='7.0.0-beta.3'
     menuIcon='apps'
     includeIcon
   >
