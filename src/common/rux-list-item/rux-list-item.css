@@ -2,6 +2,7 @@
   background-color: var(--color-background-surface-default);
   border-top: 1px solid var(--color-background-base-default);
   padding: var(--spacing-3) var(--spacing-6);
+  border-left: 4px solid transparent;
 }
 
 .rux-list-item:hover {
@@ -11,5 +12,5 @@
 
 .rux-list-item.selected {
   background-color: var(--color-background-surface-selected);
-  border-left: 4px solid var(--color-border-interactive-default);
+  border-left-color: var(--color-border-interactive-default);
 }
