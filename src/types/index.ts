@@ -2,6 +2,8 @@ export type Children = {
   children: React.ReactNode;
 };
 
+export type FC<Props = {}> = React.FC<{ children?: React.ReactNode } & Props>;
+
 export enum Path {
   dashboard = '/dashboard',
   home = '/',
