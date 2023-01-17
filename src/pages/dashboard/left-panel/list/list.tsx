@@ -12,19 +12,19 @@ export const List: React.FC = () => {
 
   return (
     <RuxList className='List-wrapper'>
-      {contacts.map(({ _id, ...c }, i) => (
+      {contacts.map(({ id, ...c }, i) => (
         <RuxListItem
-          key={_id}
+          key={id}
           selected={selected === i}
           onClick={() => setSelected(i)}
           className='List-item-wrapper'
         >
-          <RuxStatus status={c.contactStatus} />
+          <RuxStatus status={c.status} />
           <div className='flex-grow-1'>
-            <h3>{c.contactSatellite}</h3>
-            <h6>{c.contactStep}</h6>
+            <h3>{c.satellite}</h3>
+            <h6>{c.step}</h6>
           </div>
-          <h1>{c.contactElevation}</h1>
+          <h1>{c.elevation}</h1>
         </RuxListItem>
       ))}
     </RuxList>

@@ -29,21 +29,21 @@ export const RightPanel: React.FC = () => {
             <RuxTableCell>Header text</RuxTableCell>
           </RuxTableHeader>
           <RuxTableBody>
-            {contacts.slice(10, 30).map(({ _id, ...c }) => (
+            {contacts.map(({ id, ...c }) => (
               <RuxTableRow
                 id='RightPanel-table-row'
-                key={_id}
+                key={id}
                 onClick={handleOpen}
               >
                 <RuxTableCell>
-                  <RuxStatus status={c.contactStatus} />
+                  <RuxStatus status={c.status} />
                 </RuxTableCell>
                 <RuxTableCell>
-                  <p>{c.contactName}</p>
+                  <p>{c.name}</p>
                 </RuxTableCell>
                 <RuxTableCell>
-                  <p>{c.contactStep}</p>
-                  <p>{c.contactDetail}</p>
+                  <p>{c.step}</p>
+                  <p>{c.detail}</p>
                 </RuxTableCell>
               </RuxTableRow>
             ))}

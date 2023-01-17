@@ -35,22 +35,22 @@ export const BottomPanel: React.FC = () => {
           </RuxTableRow>
         </RuxTableHeader>
         <RuxTableBody>
-          {contacts.slice(10, 30).map(({ _id, ...c }) => (
-            <RuxTableRow key={_id}>
+          {contacts.map(({ id, ...c }) => (
+            <RuxTableRow key={id}>
               <RuxTableCell>
                 <RuxCheckbox checked={checked} />
               </RuxTableCell>
               <RuxTableCell>
-                <p>{c.contactGround}</p>
+                <p>{c.ground}</p>
               </RuxTableCell>
               <RuxTableCell>
-                <p>{c.contactEquipment}</p>
+                <p>{c.equipment}</p>
               </RuxTableCell>
               <RuxTableCell>
-                <RuxStatus status={c.contactStatus} />
+                <RuxStatus status={c.status} />
               </RuxTableCell>
               <RuxTableCell>
-                <p>{c.contactName}</p>
+                <p>{c.name}</p>
               </RuxTableCell>
               <RuxTableCell>
                 <RuxIcon icon='border-clear' size='extra-small' />

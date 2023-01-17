@@ -5,14 +5,19 @@ import Home from 'pages/home';
 import Dashboard from 'pages/dashboard';
 
 const App: React.FC = () => (
-  <DataProvider>
-    <BrowserRouter>
-      <Routes>
-        <Route path={Path.home} element={<Home />} />
-        <Route path={Path.dashboard} element={<Dashboard />} />
-      </Routes>
-    </BrowserRouter>
-  </DataProvider>
+  <BrowserRouter>
+    <Routes>
+      <Route path={Path.home} element={<Home />} />
+      <Route
+        path={Path.dashboard}
+        element={
+          <DataProvider>
+            <Dashboard />
+          </DataProvider>
+        }
+      />
+    </Routes>
+  </BrowserRouter>
 );
 
 export default App;
